@@ -1,0 +1,73 @@
+
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --gray-700: hsl(0, 0%, 20%);
+    --gray-800: hsl(0, 0%, 12%);
+    --gray-900: hsl(0, 0%, 8%);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    color: var(--white);
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    background-color: var(--gray-900);
+}
+.card {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    background-color: var(--gray-800);
+    margin: 100px auto;
+    border-radius: 10px;
+    padding: 35px 20px;
+}
+.card * {
+    margin: 5px auto;
+}
+.card img {
+    width: 128px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.card h1 {
+    font-weight: 700;
+}
+.card h3 {
+    color: var(--green);
+}
+.card p {
+    font-size: 14px;
+    margin: 20px;
+}
+.links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 95%;
+    gap: 5px;
+}
+.links a {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    background-color: var(--gray-700);
+    border-radius: 10px;
+}
+.links a:hover {
+    background-color: var(--green);
+    color: var(--gray-900);
+    font-weight: 600;
+}
